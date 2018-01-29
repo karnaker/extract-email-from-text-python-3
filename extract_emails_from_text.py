@@ -51,7 +51,7 @@ if __name__ == '__main__':
         if os.path.isfile(arg):
             # create file to export emails
             extensionTime = time.strftime("%H%M%S")
-            myFile = "emailList_"+extensionTime+".txt"
+            myFile = "emailList_"+extensionTime+".csv"
             # regex emails
             for email in get_emails(file_to_str(arg)):
                 print (email)
