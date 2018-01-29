@@ -36,7 +36,7 @@ def get_emails(s):
 def add_to_file(myFile, email):
 	"""Save in a text file the emails extracted """
 	with open(myFile,"a") as emailsfile:
-            emailsfile.write(email+",")
+            emailsfile.write(email+"\n")
 
 if __name__ == '__main__':
     parser = OptionParser(usage="Usage: python %prog [FILE]...")
