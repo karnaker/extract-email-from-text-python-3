@@ -1,5 +1,6 @@
 # Extracts email addresses from one or more plain text files.
 # Outputs the email addresses to a list in a CSV file.
+# Example command line use: winpty python extract_emails_from_text.py test.txt
 #
 # Notes:
 # - Does not check for duplicates (which can easily be done in the terminal).
