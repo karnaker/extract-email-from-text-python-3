@@ -1,13 +1,12 @@
-#!/usr/bin/env python
-#
 # Extracts email addresses from one or more plain text files.
+# Outputs the email addresses to a list in a CSV file.
 #
 # Notes:
-# - Does not save to file (pipe the output to a file if you want it saved).
 # - Does not check for duplicates (which can easily be done in the terminal).
 #
-# (c) 2013  Dennis Ideler <ideler.dennis@gmail.com>
-# modified by Frédéric Pierron <fpierron@gmail.com>
+# Original file: Dennis Ideler <ideler.dennis@gmail.com>
+# Modified file: Frederic Pierron <fpierron@gmail.com>
+# Author of current file: Vikram Karnaker
 
 from optparse import OptionParser
 import os.path
@@ -38,7 +37,7 @@ def add_to_file(myFile, email):
 	"""Save in a text file the emails extracted """
 	with open(myFile,"a") as emailsfile:
             emailsfile.write(email+",")
-	
+
 if __name__ == '__main__':
     parser = OptionParser(usage="Usage: python %prog [FILE]...")
     # No options added yet. Add them here if you ever need them.
