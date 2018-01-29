@@ -1,6 +1,8 @@
-# extract-email-from-text-python-3
-Extract emails from text file.
+# Extract email addresses from TXT and output to CSV
+Extract email addresses from a text file and output as a list in a CSV file.
 
-This script is a fork from https://gist.github.com/dideler/5219706
+Works with python 3.
 
-It works with python 3 and export the emails to a CSV file.
+**Forks and References:**
+* [Forked from Frederic Pierron ](https://github.com/fredericpierron/extract-email-from-text-python-3)
+* [Base script used by Frederic Pierron ](https://gist.github.com/dideler/5219706)
